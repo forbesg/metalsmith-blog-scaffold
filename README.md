@@ -11,6 +11,7 @@ The Metalsmith scaffold includes:
 * metalsmith-permalinks
 * metalsmith-sass
 * metalsmith-snippet
+* metalsmith-twig
 
 It also includes the following dev-dependancies:
 
