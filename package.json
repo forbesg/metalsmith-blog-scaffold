@@ -1,0 +1,26 @@
+{
+  "name": "generic-metalsmith-build",
+  "version": "1.0.0",
+  "description": "A Simple Generic Metalsmith Blog Build",
+  "main": "index.js",
+  "dependencies": {
+    "metalsmith": "^2.2.2",
+    "metalsmith-collections": "^0.7.0",
+    "metalsmith-layouts": "^1.6.5",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-sass": "^1.3.0",
+    "metalsmith-snippet": "^2.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.14.0",
+    "metalsmith-debug": "^1.1.0",
+    "metalsmith-watch": "^1.0.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Forbes Gray <fnbg75@gmail.com>",
+  "license": "ISC"
+}
