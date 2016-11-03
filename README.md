@@ -26,9 +26,11 @@ It also includes the following dev-dependancies:
 
 Includes [Normalize CSS](https://necolas.github.io/normalize.css/)
 
-`git clone https://github.com/forbesg/metalsmith-blog-scaffold.git`
+`mkdir My-Static-Site`
 
-`cd metalsmith-blog-scaffold`
+`git clone https://github.com/forbesg/metalsmith-blog-scaffold.git My-Static-Site`
+
+`cd My-Static-Site`
 
 `npm install`
 
