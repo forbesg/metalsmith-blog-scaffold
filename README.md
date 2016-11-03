@@ -32,6 +32,8 @@ Includes [Normalize CSS](https://necolas.github.io/normalize.css/)
 
 `npm install`
 
-Start Server `npm start`
+Build Site and Start Server - `npm start`
 
 Build folder will be created '/build' and static files served.
+
+Images - [Unsplash](https://unsplash.com/)

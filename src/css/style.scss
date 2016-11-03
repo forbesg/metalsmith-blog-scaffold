@@ -3,10 +3,30 @@ $white: #fff;
 
 body {
   background-color: $white;
+  a {
+    text-decoration: none;
+    &.button {
+      padding: 10px;
+      border: 1px solid #0D0D0D;
+      transition: background-color 0.2s, color 0.2s;
+      &:hover {
+        background-color: #0D0D0D;
+        color: #fff;
+      }
+    }
+  }
   .banner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     height: 400px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    h1 {
+      color: #fff;
+      font-weight: lighter;
+    }
   }
 }

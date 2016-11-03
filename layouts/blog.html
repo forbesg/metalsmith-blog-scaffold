@@ -2,6 +2,21 @@
 
 {% block content %}
 <div class="blog-container">
-  <h1>This is the Blog Page</h1>
+  <h1>{{ title }}</h1>
+  <h2>Below are a list of Blog Posts</h2>
+  <div class="posts-container">
+    {% for post in metadata.collections.posts %}
+    <div class="post-card">
+      <a href="/{{post.path}}">
+        <img src="{{post.image.imagePath}}" alt="{{post.image.imageAlt}}" />
+        <h3>{{post.title}}</h3>
+        <p>
+          {{post.snippet}}
+        </p>
+        <a href="/{{post.path}}" class="button">Read More</a>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 {% endblock %}

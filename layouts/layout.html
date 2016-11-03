@@ -24,7 +24,9 @@
     </header>
     {% if banner %}
     <div class="banner" style="background-image: url({{banner.imagePath}});">
-      <!-- <img src="{{banner.imagePath}}" alt="{{banner.imageAlt}}" /> -->
+      {% if banner.text %}
+      <h1>{{ banner.text }}</h1>
+      {% endif %}
     </div>
     {% endif %}
     <div class="main-container">
