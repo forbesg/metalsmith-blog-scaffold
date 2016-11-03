@@ -28,4 +28,10 @@ Includes [Normalize CSS](https://necolas.github.io/normalize.css/)
 
 `git clone https://github.com/forbesg/metalsmith-blog-scaffold.git`
 
+`cd metalsmith-blog-scaffold`
+
 `npm install`
+
+Start Server `npm start`
+
+Build folder will be created '/build' and static files served.
