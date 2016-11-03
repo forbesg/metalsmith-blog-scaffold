@@ -27,4 +27,5 @@ It also includes the following dev-dependancies:
 Includes [Normalize CSS](https://necolas.github.io/normalize.css/)
 
 `git clone https://github.com/forbesg/metalsmith-blog-scaffold.git`
+
 `npm install`
