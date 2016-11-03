@@ -12,7 +12,7 @@ var server      = require('./server');
 
 Metalsmith(__dirname)
   .metadata({
-    siteTitle: "Site Title",
+    siteTitle: "Site title",
     description: "Site Description",
     generator: "Metalsmith",
     author: "Author",
@@ -21,9 +21,11 @@ Metalsmith(__dirname)
   .use(
     watch({
       paths: {
+        "index.js" : "**/*",
         "${source}/**/*": "**/*",
-        "layouts/**/*": "**/*",
-        "${source}/css/*.scss": "**/*"
+        "${source}/layouts/**/*": "**/*",
+        "${source}/css/*.scss": "**/*",
+        "${source}/layouts/*.html": "**/*"
       },
       livereload: true, //Add liverload script to enable browser reload
     })

@@ -1,9 +1,16 @@
+{# Assign Twig Variables #}
+{% set pageDescription = description ? description : metadata.description %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>{{ title }} | {{ metadata.siteTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}">
+    <meta name="keywords" content="{{ keywords }}">
+    <link rel="stylesheet" href="/css/vendor/normalize.min.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
@@ -15,12 +22,17 @@
         {% endfor %}
       </nav>
     </header>
-    <div class="main-cotainer">
+    {% if banner %}
+    <div class="banner" style="background-image: url({{banner.imagePath}});">
+      <!-- <img src="{{banner.imagePath}}" alt="{{banner.imageAlt}}" /> -->
+    </div>
+    {% endif %}
+    <div class="main-container">
     {% block content %}
 
     {% endblock %}
     </div>
+    <footer></footer>
   <script src="http://localhost:35729/livereload.js"></script>
-  <!-- <script src="/js/livereload.js" type="text/javascript"></script> -->
   </body>
 </html>

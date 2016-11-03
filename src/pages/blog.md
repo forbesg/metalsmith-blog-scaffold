@@ -1,6 +1,7 @@
 ---
 title: Blog
-view: default.html
+view: blog.html
+description: This is the blog page
 ---
 
 # Blog Page

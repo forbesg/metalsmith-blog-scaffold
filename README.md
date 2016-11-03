@@ -18,3 +18,5 @@ It also includes the following dev-dependancies:
 * express - for development server
 * metalsmith-debug
 * metalsmith-watch - live reloading
+
+Includes [Normalize CSS](https://necolas.github.io/normalize.css/)
