@@ -18,7 +18,9 @@
       <nav>
         <a href="/">Home</a>
         {% for page in metadata.collections.pages %}
+        {% if page.title != '404' %}
         <a href="/{{page.path}}">{{page.title}}</a>
+        {% endif %}
         {% endfor %}
       </nav>
     </header>

@@ -1,3 +1,5 @@
+'use strict';
+
 var Metalsmith  = require('metalsmith');
 var twig        = require('metalsmith-twig');
 var markdown    = require('metalsmith-markdown');

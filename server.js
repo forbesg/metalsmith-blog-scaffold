@@ -7,6 +7,7 @@ server.use(express.static(__dirname + '/build'));
 console.log(__dirname + '/build');
 server.listen(port, function () {
   console.log('Listening on port ' + port);
+  console.log('View site at http://localhost:' + port)
 });
 
 module.exports = server;
